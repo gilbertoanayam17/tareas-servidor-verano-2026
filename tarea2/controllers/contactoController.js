@@ -29,12 +29,14 @@ function submitForm(req, res) {
     if (errores.length > 0) {
         return res.status(400).send('Formulario inválido: ' + errores.join(' '));
     }
+    const origen = req.protocol + '://' + req.get('host');
 
     fetch('https://formsubmit.co/ajax/' + CORREO_DESTINO, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            Accept: 'application/json'
+            Accept: 'application/json',
+            Referer: origen
         },
         body: JSON.stringify({
             name: nombre,
@@ -43,11 +45,12 @@ function submitForm(req, res) {
             message: mensaje
         })
     })
-        .then((respuesta) => {
-            if (!respuesta.ok) {
+        .then((respuesta) => respuesta.json())
+        .then((datos) => {
+            if (datos.success !== 'true') {
                 return res
                     .status(502)
-                    .send('No se pudo enviar el mensaje, intentalo despues.');
+                    .send('No se pudo enviar el mensaje: ' + datos.message);
             }
             res.sendFile(path.join(__dirname, '..', 'views', 'enviado.html'));
         })
