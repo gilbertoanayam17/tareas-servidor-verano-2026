@@ -1,0 +1,16 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "CV en linea con Node.js y Express",
+  "license": "ISC",
+  "author": "Gilberto Anaya mercado",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

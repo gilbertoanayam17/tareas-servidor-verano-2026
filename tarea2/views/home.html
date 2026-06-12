@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <title>Gilberto Anaya Mercado · Presentación</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+
+        <!-- Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="/styles/estilos.css" />
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="barra">
+                <a href="#" class="barra-logo">GAM</a>
+                <div class="barra-links">
+                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="/contacto">Contacto</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--  PORTADA  -->
+            <section class="portada">
+                <div class="etiqueta">CV Digital</div>
+                <h1 class="nombre">
+                    Gilberto
+                    <em>Anaya</em>
+                    Mercado
+                </h1>
+                <p class="portada-texto">
+                    Estudiante de Ing. en Desarrollo de Software · ITESO · Guadalajara, Mx
+                </p>
+            </section>
+
+            <!-- 001 ACERCA / 002 TECNOLOGIAS -->
+            <section id="sobre-mi" class="fila fila-arriba">
+                <div class="lado lado-izquierdo">
+                    <div class="centrado">
+                        <div class="numero">001 — Acerca de mí</div>
+                        <h2 class="titulo-grande">
+                            Estoy a punto de entrar a
+                            <span class="dorado">quinto</span> semestre
+                        </h2>
+                        <p class="texto">
+                            con ganas de aprender nuevos frameworks, tecnologías
+                            y buenas prácticas de desarrollo de software.
+                        </p>
+                        <p class="texto">
+                            También me interesa la parte creativa del
+                            desarrollo, cuando con código produces algo visual,
+                            sonoro o interactivo que genere satisfacción de percibir.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lado">
+                    <div class="centrado">
+                        <div class="numero">002 — Tecnologías</div>
+
+                        <div class="grupo">
+                            <div class="subtitulo">Lenguajes</div>
+                            <div class="chips">
+                                <span class="chip">Python</span>
+                                <span class="chip">C</span>
+                                <span class="chip">Java</span>
+                                <span class="chip">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <div class="grupo">
+                            <div class="subtitulo">Web y backend</div>
+                            <div class="chips">
+                                <span class="chip">HTML / CSS</span>
+                                <span class="chip">Node.js</span>
+                                <span class="chip">Express</span>
+                            </div>
+                        </div>
+
+                        <div class="grupo">
+                            <div class="subtitulo">Bases de datos</div>
+                            <div class="chips">
+                                <span class="chip">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 003 PROYECTOS  -->
+            <section class="proyectos">
+                <div class="numero">003 — Proyectos</div>
+                <div class="proyectos-grid">
+                    <!-- Sound Wrapper -->
+                    <article class="tarjeta">
+                        <img
+                            class="tarjeta-img"
+                            src="/assets/sound_wrapper_card.png"
+                            alt="Sound Wrapper"
+                        />
+                        <div class="tarjeta-cuerpo">
+                            <div class="tarjeta-cat">Sintetizador en Java</div>
+                            <h3 class="tarjeta-titulo">Sound Wrapper</h3>
+                            <p class="tarjeta-texto">
+                                Wrapper de audio en Java que actúa como
+                                sintetizador: genera y manipula sonidos
+                                , con control de osciladores,
+                                envolventes y efectos. Todo desde un archivo
+                                .txt proporcionado por el usuario que sigue
+                                cierta sintaxis (similar al concepto del Algorave).
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Audio</span>
+                                <span class="tag">DSP</span>
+                            </div>
+                            <a
+                                href="https://github.com/gilbertoanayam17/Sound-Wrapper"
+                                target="_blank"
+                                class="enlace"
+                                >Ver repositorio</a
+                            >
+                        </div>
+                    </article>
+
+                    <!-- Spotify Library Sim -->
+                    <article class="tarjeta">
+                        <img
+                            class="tarjeta-img"
+                            src="/assets/spotify_library_card.png"
+                            alt="Spotify Library Sim"
+                        />
+                        <div class="tarjeta-cuerpo">
+                            <div class="tarjeta-cat">
+                                Simulador de biblioteca musical en C
+                            </div>
+                            <h3 class="tarjeta-titulo">Spotify Library Sim</h3>
+                            <p class="tarjeta-texto">
+                                Simulador tipo Spotify implementado en C puro.
+                                Aplica estructuras de datos como mapas, sets,
+                                colas de prioridad, etc. programadas desde cero, sin
+                                librerías externas.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">C</span>
+                                <span class="tag">Estructuras de datos</span>
+                                <span class="tag">Algoritmos</span>
+                            </div>
+                            <a
+                                href="https://github.com/gilbertoanayam17/Spotify-Library-Sim"
+                                target="_blank"
+                                class="enlace"
+                                >Ver repositorio</a
+                            >
+                        </div>
+                    </article>
+
+                    <!-- Calendorx -->
+                    <article class="tarjeta">
+                        <img
+                            class="tarjeta-img"
+                            src="/assets/calendorx_card.png"
+                            alt="Calendorx"
+                        />
+                        <div class="tarjeta-cuerpo">
+                            <div class="tarjeta-cat">Calendario web full-stack</div>
+                            <h3 class="tarjeta-titulo">Calendorx</h3>
+                            <p class="tarjeta-texto">
+                                Aplicación de calendario web con autenticación
+                                JWT, hasheo bcrypt, animaciones Lottie y
+                                sincronización con Google Calendar API. Stack:
+                                HTML/CSS/Bootstrap, Node.js, Express y MongoDB.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">JWT</span>
+                                <span class="tag">Google API</span>
+                            </div>
+                            <a
+                                href="https://github.com/gilbertoanayam17/Calendorx"
+                                target="_blank"
+                                class="enlace"
+                                >Ver repositorio</a
+                            >
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 004 EDUCACION / 005 INTERESES/HOBBIES -->
+            <section class="fila fila-abajo">
+                <div class="lado lado-izquierdo">
+                    <div class="centrado">
+                        <div class="numero">004 — Educación</div>
+
+                        <div class="educacion-item">
+                            <span class="bolita"></span>
+                            <div class="edu-encabezado">
+                                ITESO <span>Ago 2024 — Dic 2028 (previsto)</span>
+                            </div>
+                            <h3 class="edu-titulo">
+                                Ingeniería en Desarrollo de Software
+                            </h3>
+                            <p class="edu-escuela">
+                                Instituto Tecnológico de Estudios Superiores de
+                                Occidente
+                            </p>
+                            <span class="edu-insignia">Actualmente cursando verano entre 4to y 5to semestre</span>
+                        </div>
+
+                        <div class="educacion-item">
+                            <span class="bolita"></span>
+                            <div class="edu-encabezado">
+                                HYCIG <span>Ago 2021 — Jul 2024</span>
+                            </div>
+                            <h3 class="edu-titulo">Preparatoria</h3>
+                            <p class="edu-escuela">
+                                Instituto de Humanidades y Ciencias de Guadalajara
+                            </p>
+                            <a
+                                href="https://www.facebook.com/share/p/18pjnv1uhQ/"
+                                target="_blank"
+                                class="edu-insignia"
+                                >Mejor promedio de generación</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lado">
+                    <div class="centrado centrado-intereses">
+                        <div class="numero">005 — Intereses/Hobbies</div>
+
+                        <div class="intereses-grid">
+                            <div class="interes">
+                                <img
+                                    class="interes-img"
+                                    src="/assets/touchdesigner_card.png"
+                                    alt="TouchDesigner"
+                                />
+                                <div class="interes-capa">
+                                    <h3 class="interes-titulo">TouchDesigner</h3>
+                                    <p class="interes-texto">
+                                        Software de programación visual orientado
+                                        a arte generativo y multimedia en tiempo
+                                        real. Permite crear visuales
+                                        interactivos, instalaciones reactivas a
+                                        audio y experiencias audiovisuales
+                                        mediante nodos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="interes">
+                                <img
+                                    class="interes-img"
+                                    src="/assets/cascadas_card.png"
+                                    alt="Cascadas"
+                                />
+                                <div class="interes-capa">
+                                    <h3 class="interes-titulo">Cascadas</h3>
+                                    <p class="interes-texto">
+                                        Explorar lugares con cascadas y ríos.
+                                        Buena forma de desconectarme del entorno
+                                        digital y encontrar algo de calma.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer-->
+        <footer class="pie">
+            <div>
+                <div class="pie-nombre">Gilberto Anaya Mercado</div>
+                <div class="pie-info">
+                    Ing. en Desarrollo de Software · ITESO · Guadalajara, Mx
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
